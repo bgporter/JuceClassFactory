@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{28E514A0-6834-3E6B-0195-383C4D5BE95D}") = "ClassFactory", "ClassFactory.vcxproj", "{96162138-307F-8BFF-1E84-39D662904523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96162138-307F-8BFF-1E84-39D662904523}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96162138-307F-8BFF-1E84-39D662904523}.Debug|Win32.Build.0 = Debug|Win32
+		{96162138-307F-8BFF-1E84-39D662904523}.Release|Win32.ActiveCfg = Release|Win32
+		{96162138-307F-8BFF-1E84-39D662904523}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

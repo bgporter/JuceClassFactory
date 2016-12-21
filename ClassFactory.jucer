@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="vtxHeq" name="ClassFactory" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.artandlogic.ClassFactory" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.0">
+  <MAINGROUP id="bFX8eK" name="ClassFactory">
+    <GROUP id="{7FA58B82-35FD-9EFE-E1EC-F54EB48DEC38}" name="Source">
+      <FILE id="Y6R99M" name="base.cpp" compile="1" resource="0" file="Source/base.cpp"/>
+      <FILE id="xJlF3A" name="base.h" compile="0" resource="0" file="Source/base.h"/>
+      <FILE id="HCnADa" name="baseFactoryDatabase.cpp" compile="1" resource="0"
+            file="Source/baseFactoryDatabase.cpp"/>
+      <FILE id="JtbFHl" name="baseFactoryDatabase.h" compile="0" resource="0"
+            file="Source/baseFactoryDatabase.h"/>
+      <FILE id="TAbwbZ" name="derived.cpp" compile="1" resource="0" file="Source/derived.cpp"/>
+      <FILE id="PJ5aZU" name="derived.h" compile="0" resource="0" file="Source/derived.h"/>
+      <FILE id="JPpgN0" name="factory.cpp" compile="1" resource="0" file="Source/factory.cpp"/>
+      <FILE id="N3b3co" name="factory.h" compile="0" resource="0" file="Source/factory.h"/>
+      <FILE id="YeK4s8" name="factoryDatabase.h" compile="0" resource="0"
+            file="Source/factoryDatabase.h"/>
+      <FILE id="E4tzAH" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ClassFactory"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ClassFactory"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="ClassFactory"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="ClassFactory"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="ClassFactory"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="ClassFactory"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="ClassFactory"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="ClassFactory"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
