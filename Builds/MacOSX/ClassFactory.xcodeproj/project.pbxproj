@@ -260,6 +260,7 @@
 		B5BA1F0D7DFF636FEB2FDE9F = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "juce_SortedSet.h"; path = "../../JuceLibraryCode/modules/juce_core/containers/juce_SortedSet.h"; sourceTree = "SOURCE_ROOT"; };
 		B5CF48C5F7D7054FEBCC0ABE = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "juce_TemporaryFile.cpp"; path = "../../JuceLibraryCode/modules/juce_core/files/juce_TemporaryFile.cpp"; sourceTree = "SOURCE_ROOT"; };
 		B6401B66C24B5D7DDE735F10 = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "juce_Thread.h"; path = "../../JuceLibraryCode/modules/juce_core/threads/juce_Thread.h"; sourceTree = "SOURCE_ROOT"; };
+		BB382093634BE7FFA9021E44 = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = factoryBuildable.h; path = ../../Source/factoryBuildable.h; sourceTree = "SOURCE_ROOT"; };
 		BCF2379D2DE8331C083F7192 = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "juce_InputSource.h"; path = "../../JuceLibraryCode/modules/juce_core/streams/juce_InputSource.h"; sourceTree = "SOURCE_ROOT"; };
 		BD30B4DE42873F455631A9F9 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "juce_ConnectedChildProcess.cpp"; path = "../../JuceLibraryCode/modules/juce_events/interprocess/juce_ConnectedChildProcess.cpp"; sourceTree = "SOURCE_ROOT"; };
 		BD7CB3714D11FF231A8A7BA1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "juce_HighResolutionTimer.cpp"; path = "../../JuceLibraryCode/modules/juce_core/threads/juce_HighResolutionTimer.cpp"; sourceTree = "SOURCE_ROOT"; };
@@ -335,6 +336,7 @@
 					9F9DF962102E996DFA7B7EFE,
 					50575747C9C8119910DA9E74,
 					56D21119BD9A2CB6F180CC35,
+					BB382093634BE7FFA9021E44,
 					71A07FF237940F37A462A59A,
 					FD3ED96B3182EAC41D23ED25, ); name = Source; sourceTree = "<group>"; };
 		7ECEADB008D88103CF29E835 = {isa = PBXGroup; children = (
