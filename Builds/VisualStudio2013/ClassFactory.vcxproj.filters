@@ -516,6 +516,9 @@
     <ClInclude Include="..\..\Source\factory.h">
       <Filter>ClassFactory\Source</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\factoryBuildable.h">
+      <Filter>ClassFactory\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\factoryDatabase.h">
       <Filter>ClassFactory\Source</Filter>
     </ClInclude>

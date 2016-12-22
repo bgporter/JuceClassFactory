@@ -15,6 +15,8 @@
       <FILE id="PJ5aZU" name="derived.h" compile="0" resource="0" file="Source/derived.h"/>
       <FILE id="JPpgN0" name="factory.cpp" compile="1" resource="0" file="Source/factory.cpp"/>
       <FILE id="N3b3co" name="factory.h" compile="0" resource="0" file="Source/factory.h"/>
+      <FILE id="V5QKBT" name="factoryBuildable.h" compile="0" resource="0"
+            file="Source/factoryBuildable.h"/>
       <FILE id="YeK4s8" name="factoryDatabase.h" compile="0" resource="0"
             file="Source/factoryDatabase.h"/>
       <FILE id="E4tzAH" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>

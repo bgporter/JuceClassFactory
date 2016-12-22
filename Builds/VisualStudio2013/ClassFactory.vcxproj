@@ -488,6 +488,7 @@
     <ClInclude Include="..\..\Source\baseFactoryDatabase.h"/>
     <ClInclude Include="..\..\Source\derived.h"/>
     <ClInclude Include="..\..\Source\factory.h"/>
+    <ClInclude Include="..\..\Source\factoryBuildable.h"/>
     <ClInclude Include="..\..\Source\factoryDatabase.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\containers\juce_AbstractFifo.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_core\containers\juce_Array.h"/>

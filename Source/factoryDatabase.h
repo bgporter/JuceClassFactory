@@ -57,7 +57,7 @@
  */
 
 
-template <class Base>
+template <class T>
 class FactoryDatabase
 {
 public:
@@ -65,7 +65,7 @@ public:
    {
       if (0 == fCount++)
       {
-         fDatabase = new HashMap<String, BaseFactory<Base>* >();
+         fDatabase = new HashMap<String, BaseFactory<T>* >();
       }
    }
    ~FactoryDatabase()
@@ -85,7 +85,7 @@ public:
     * @param factory Pointer to a NodeFactory object that will return an instance
     *                of the Node class.
     */
-   static void RegisterFactory(StringRef name, BaseFactory<Base>* factory)
+   static void RegisterFactory(StringRef name, BaseFactory<T>* factory)
    {
       jassert(fDatabase);
       DBG("Registering factory for " << name);
@@ -97,10 +97,10 @@ public:
     * @return      A pointer to the object if we have a registered factory
     *              object that knows how to make it, or `nullptr`.
     */    
-   static Base* Create(StringRef name)
+   static T* Create(StringRef name)
    {
-      Base* retval = nullptr;
-      BaseFactory<Base>* factory = (*fDatabase)[name];
+      T* retval = nullptr;
+      BaseFactory<T>* factory = (*fDatabase)[name];
       if (factory)
       {
          retval = factory->Create();
@@ -111,7 +111,7 @@ public:
    
 protected:
    static int fCount;
-   static HashMap<String, BaseFactory<Base>* >* fDatabase;
+   static HashMap<String, BaseFactory<T>* >* fDatabase;
 };
 
 
