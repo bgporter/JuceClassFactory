@@ -26,7 +26,6 @@
 
 
 Base::Base()
-:  fTypeName("~~UNKNOWN~~")
 {
    
 }
@@ -36,17 +35,3 @@ Base::~Base()
    
 }
 
-void Base::SetTypeName(StringRef name)
-{
-   fTypeName = name;
-}
-
-void Base::RegisterFactory(StringRef name, BaseFactory<Base>* factory)
-{
-   BaseFactoryDatabase::RegisterFactory(name, factory);
-}
-
-Base* Base::Create(StringRef name)
-{
-   return BaseFactoryDatabase::Create(name);
-}
