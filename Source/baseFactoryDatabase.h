@@ -27,12 +27,11 @@
 #include "factoryDatabase.h"
 
 class Base;
-//class BaseFactory;
 
 using BaseFactoryDb = HashMap<String, BaseFactory<Base>*>;
 using BaseFactoryDatabase = FactoryDatabase<Base>;
 
-static BaseFactoryDatabase nfd;
+static BaseFactoryDatabase bfd;
 
 
 
