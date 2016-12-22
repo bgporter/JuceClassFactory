@@ -34,7 +34,7 @@
  *        Actual factory classes will use the below Factory<Base, Derived> 
  *        version that's defined immediately below.
  */
-template <class Base>
+template <class T>
 class BaseFactory
 {
 public:
@@ -44,12 +44,12 @@ public:
    BaseFactory(StringRef typeName)
    :  fTypeName(typeName)
    {
-      Base::RegisterFactory(typeName, this );
+      T::RegisterFactory(typeName, this );
    }
    
    virtual ~BaseFactory() = default;
    
-   virtual Base* Create() = 0;
+   virtual T* Create() = 0;
    
 protected:
    /// the 'type name' for classes created by this factory, which may or
@@ -62,27 +62,27 @@ protected:
 
 
 
-template <class Base, class Derived>
-class Factory : public BaseFactory<Base>
+template <class T, class Derived>
+class Factory : public BaseFactory<T>
 {
 public:
    Factory(StringRef typeName)
-   :  BaseFactory<Base>(typeName)
+   :  BaseFactory<T>(typeName)
    {
       // compile time assertion to make sure that there's a valid 
       // base/derived relationship between the two classes that this 
       // factory is templated on.
-      static_assert(std::is_base_of<Base, Derived>::value, "");
+      static_assert(std::is_base_of<T, Derived>::value, "");
    }
    
    ~Factory() = default;
    
-   Base* Create() override
+   T* Create() override
    {
-      Base* retval = new Derived();
+      T* retval = new Derived();
       if (retval)
       {
-         retval->SetTypeName(BaseFactory<Base>::fTypeName);
+         retval->SetTypeName(BaseFactory<T>::fTypeName);
       }
       return retval;
    }
